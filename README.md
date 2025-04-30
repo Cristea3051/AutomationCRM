@@ -45,16 +45,14 @@ crm-automation/
             - com/
                 - crm/
                     - pages/
-                        - BasePage.java
                         - LoginPage.java
                         - GoogleAccountsPage.java
                     - utils/
+                        - BasePage.java
     - test/
         - java/
             - com/
                 - crm/
-                    - base/
-                        - BasePage.java
                     - login/
                         - LoginTest.java
                     - googleaccounts/
