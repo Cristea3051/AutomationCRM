@@ -1,4 +1,4 @@
-package com.crm.googleaccounts;
+package com.crm.GoogleAccounts.SearchAccount;
 
 import org.testng.annotations.Test;
 

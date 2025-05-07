@@ -1,0 +1,259 @@
+2025-05-05 14:49:02 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-05 14:49:03 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.49 linux
+2025-05-05 14:49:04 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-05 14:49:04 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-05 14:49:04 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-05 14:49:04 INFO  com.crm.utils.BasePage - Starting login test
+2025-05-05 15:11:03 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-05 15:12:14 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-05 15:12:14 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-05 15:12:16 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.49 linux
+2025-05-05 15:12:17 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-05 15:12:17 INFO  com.crm.utils.BasePage - Starting login test
+2025-05-05 15:18:36 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-05 15:18:37 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.49 linux
+2025-05-05 15:18:38 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-05 15:18:38 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-05 15:18:38 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-05 15:18:38 INFO  com.crm.utils.BasePage - Starting login test
+2025-05-05 15:18:57 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-05 15:18:57 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.49 linux
+2025-05-05 15:18:58 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-05 15:18:58 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-05 15:18:59 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-05 15:18:59 INFO  com.crm.utils.BasePage - Starting login test
+2025-05-07 13:17:22 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:17:22 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:18:37 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:18:38 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:18:38 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-07 13:20:06 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:20:06 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:20:07 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:20:08 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:20:08 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-07 13:21:11 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:21:11 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:21:11 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:21:12 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:21:12 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-07 13:21:12 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:21:12 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:21:13 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:28:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:28:41 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:28:42 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:28:43 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:28:44 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:28:44 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:28:45 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:29:30 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:29:31 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:29:31 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:29:32 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:29:37 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746613776961.0.html]]
+2025-05-07 13:29:37 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746613776961.0.png]]
+2025-05-07 13:29:37 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:29:37 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:29:39 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:32:13 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:32:13 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:32:14 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:32:14 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:32:19 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746613939475.0.html]]
+2025-05-07 13:32:19 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746613939475.0.png]]
+2025-05-07 13:32:19 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:32:19 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:32:20 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:34:25 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:34:25 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:34:26 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:34:26 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:34:27 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-07 13:34:27 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:34:27 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:34:28 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:34:40 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:34:40 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:34:41 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:34:41 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:34:42 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-07 13:36:36 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:36:36 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:36:37 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:36:38 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:36:41 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-07 13:37:10 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:37:10 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:37:11 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:37:11 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:37:15 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-07 13:37:15 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:37:15 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:37:16 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:37:35 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:37:35 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:37:36 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:37:36 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:37:36 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:37:38 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:37:42 INFO  com.crm.utils.BasePage - CreateAccountTest
+2025-05-07 13:38:00 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:38:00 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:38:01 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:38:02 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:38:02 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:38:03 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:38:08 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746614288463.0.html]]
+2025-05-07 13:38:08 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746614288463.0.png]]
+2025-05-07 13:38:29 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:38:29 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:38:30 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:38:31 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:38:31 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:38:32 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:38:40 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746614320538.0.html]]
+2025-05-07 13:38:40 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746614320538.0.png]]
+2025-05-07 13:39:40 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 13:39:40 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 13:39:41 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 13:39:41 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 13:39:41 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 13:39:43 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 13:39:53 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746614392911.0.html]]
+2025-05-07 13:39:53 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746614392911.0.png]]
+2025-05-07 15:11:54 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 15:11:54 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 15:11:55 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 15:11:56 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 15:11:56 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 15:11:58 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 15:12:15 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746619934790.0.html]]
+2025-05-07 15:12:15 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746619934790.0.png]]
+2025-05-07 15:16:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 15:16:41 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 15:16:42 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 15:16:43 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 15:16:43 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 15:16:44 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 15:16:48 INFO  com.crm.utils.BasePage - CreateAccountTest executed
+2025-05-07 15:18:56 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 15:18:56 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 15:18:57 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 15:18:58 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 15:18:58 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 15:18:58 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 15:19:08 INFO  com.crm.utils.BasePage - CreateAccountTest executed
+2025-05-07 15:19:37 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 15:19:37 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 15:19:38 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 15:19:38 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 15:19:38 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 15:19:40 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 15:19:49 INFO  com.crm.utils.BasePage - CreateAccountTest executed
+2025-05-07 15:23:54 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 15:23:54 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 15:23:55 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 15:23:56 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 15:23:56 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 15:23:58 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 15:24:07 INFO  com.crm.utils.BasePage - CreateAccountTest executed
+2025-05-07 15:24:26 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 15:24:26 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 15:24:26 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 15:24:27 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 15:24:27 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 15:24:28 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 15:24:38 INFO  com.crm.utils.BasePage - CreateAccountTest executed
+2025-05-07 15:55:40 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 15:55:40 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 15:55:41 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 15:55:42 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 15:55:42 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 15:55:43 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 15:55:52 INFO  com.crm.utils.BasePage - CreateAccountTest executed
+2025-05-07 16:20:31 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 16:20:31 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 16:20:32 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 16:20:33 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 16:20:33 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 16:20:34 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 16:20:44 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746624043779.0.html]]
+2025-05-07 16:20:44 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746624043779.0.png]]
+2025-05-07 16:23:36 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 16:23:36 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 16:23:37 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 16:23:38 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 16:23:38 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 16:23:38 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 16:23:49 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746624229068.0.html]]
+2025-05-07 16:23:49 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746624229068.0.png]]
+2025-05-07 16:24:33 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 16:24:33 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 16:24:34 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 16:24:34 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 16:24:34 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 16:24:35 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 16:24:40 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746624280394.0.html]]
+2025-05-07 16:24:40 INFO  com.codeborne.selenide.impl.AttachmentConsolePrinter - [[ATTACHMENT|/home/victorcristea/Documents/AutomationCRM/AutomationCRM/build/reports/tests/1746624280394.0.png]]
+2025-05-07 16:24:52 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/victorcristea/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-05-07 16:24:52 INFO  com.codeborne.selenide.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+2025-05-07 16:24:53 INFO  com.codeborne.selenide.webdriver.WebDriverFactory - Selenide 7.9.1 / Selenium 4.31.0 / chrome 136.0.7103.92 linux
+2025-05-07 16:24:53 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-07 16:24:53 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-07 16:24:54 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-07 16:25:13 INFO  com.crm.utils.BasePage - CreateAccountTest executed
