@@ -2,50 +2,50 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-30T15:13:19 EEST" name="Command line suite" finished-at="2025-04-30T15:13:21 EEST" duration-ms="2149">
+  <suite started-at="2025-05-05T15:18:57 EEST" name="Command line suite" finished-at="2025-05-05T15:18:59 EEST" duration-ms="1711">
     <groups>
     </groups>
-    <test started-at="2025-04-30T15:13:19 EEST" name="Command line test" finished-at="2025-04-30T15:13:21 EEST" duration-ms="2149">
+    <test started-at="2025-05-05T15:18:57 EEST" name="Command line test" finished-at="2025-05-05T15:18:59 EEST" duration-ms="1711">
       <class name="com.crm.googleaccounts.CreateAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.googleaccounts.CreateAccountTest@7bb58ca3]" started-at="2025-04-30T15:13:19 EEST" name="setUp" finished-at="2025-04-30T15:13:21 EEST" duration-ms="1858" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.googleaccounts.CreateAccountTest@22356acd]" started-at="2025-05-05T15:18:57 EEST" name="setUp" finished-at="2025-05-05T15:18:58 EEST" duration-ms="1427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createAccount()[pri:0, instance:com.crm.googleaccounts.CreateAccountTest@7bb58ca3]" started-at="2025-04-30T15:13:21 EEST" name="createAccount" finished-at="2025-04-30T15:13:21 EEST" duration-ms="0" status="PASS">
+        <test-method signature="createAccount()[pri:0, instance:com.crm.googleaccounts.CreateAccountTest@22356acd]" started-at="2025-05-05T15:18:58 EEST" name="createAccount" finished-at="2025-05-05T15:18:58 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccount -->
       </class> <!-- com.crm.googleaccounts.CreateAccountTest -->
       <class name="com.crm.googleaccounts.SearchAccountTest">
-        <test-method signature="searchAccount()[pri:0, instance:com.crm.googleaccounts.SearchAccountTest@c8e4bb0]" started-at="2025-04-30T15:13:19 EEST" name="searchAccount" finished-at="2025-04-30T15:13:19 EEST" duration-ms="0" status="PASS">
+        <test-method signature="searchAccount()[pri:0, instance:com.crm.googleaccounts.SearchAccountTest@5443d039]" started-at="2025-05-05T15:18:57 EEST" name="searchAccount" finished-at="2025-05-05T15:18:57 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAccount -->
       </class> <!-- com.crm.googleaccounts.SearchAccountTest -->
       <class name="com.crm.googleaccounts.UpdateAccountTest">
-        <test-method signature="updateAccount()[pri:0, instance:com.crm.googleaccounts.UpdateAccountTest@62e136d3]" started-at="2025-04-30T15:13:19 EEST" name="updateAccount" finished-at="2025-04-30T15:13:19 EEST" duration-ms="0" status="PASS">
+        <test-method signature="updateAccount()[pri:0, instance:com.crm.googleaccounts.UpdateAccountTest@a87f8ec]" started-at="2025-05-05T15:18:57 EEST" name="updateAccount" finished-at="2025-05-05T15:18:57 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateAccount -->
       </class> <!-- com.crm.googleaccounts.UpdateAccountTest -->
       <class name="com.crm.googleaccounts.ReadAccountTest">
-        <test-method signature="readAccount()[pri:0, instance:com.crm.googleaccounts.ReadAccountTest@491666ad]" started-at="2025-04-30T15:13:19 EEST" name="readAccount" finished-at="2025-04-30T15:13:19 EEST" duration-ms="3" status="PASS">
+        <test-method signature="readAccount()[pri:0, instance:com.crm.googleaccounts.ReadAccountTest@bcef303]" started-at="2025-05-05T15:18:57 EEST" name="readAccount" finished-at="2025-05-05T15:18:57 EEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readAccount -->
       </class> <!-- com.crm.googleaccounts.ReadAccountTest -->
       <class name="com.crm.login.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.login.LoginTest@55ca8de8]" started-at="2025-04-30T15:13:21 EEST" name="setUp" finished-at="2025-04-30T15:13:21 EEST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.login.LoginTest@6995bf68]" started-at="2025-05-05T15:18:58 EEST" name="setUp" finished-at="2025-05-05T15:18:59 EEST" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin()[pri:0, instance:com.crm.login.LoginTest@55ca8de8]" started-at="2025-04-30T15:13:21 EEST" name="testLogin" finished-at="2025-04-30T15:13:21 EEST" duration-ms="1" status="PASS">
+        <test-method signature="testLogin()[pri:0, instance:com.crm.login.LoginTest@6995bf68]" started-at="2025-05-05T15:18:59 EEST" name="testLogin" finished-at="2025-05-05T15:18:59 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
       </class> <!-- com.crm.login.LoginTest -->
       <class name="com.crm.googleaccounts.DeleteAccountTest">
-        <test-method signature="deleteAccount()[pri:0, instance:com.crm.googleaccounts.DeleteAccountTest@6279cee3]" started-at="2025-04-30T15:13:19 EEST" name="deleteAccount" finished-at="2025-04-30T15:13:19 EEST" duration-ms="0" status="PASS">
+        <test-method signature="deleteAccount()[pri:0, instance:com.crm.googleaccounts.DeleteAccountTest@63787180]" started-at="2025-05-05T15:18:57 EEST" name="deleteAccount" finished-at="2025-05-05T15:18:57 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteAccount -->
