@@ -1,24 +1,22 @@
-package com.crm.GoogleAccounts.CreateAccount;
+package com.crm.GoogleAccounts;
 
+import com.crm.pages.GoogleAccounts.CreateAccountPage;
 import com.crm.utils.BasePage;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import static com.codeborne.selenide.Selenide.*;
 
 public class CreateAccountTest extends BasePage {
     private final CreateAccountPage createAccount = new CreateAccountPage();
-    @BeforeMethod
-    public void login() {
-        super.login();
-    }
 
     @Test
+
     public void createAccount() {
+
+        createAccount.performLogin();
         open("http://crm-dash/google-accounts-v2");
-        createAccount.clickAddButton();
-        createAccount.fillAccountName("Automated_Google_Account");
+        createAccount.clickAddAccountButton();
+        createAccount.fillAccountName("ONP_GG788_PRT_G225200");
         createAccount.clickCreateButton();
-        sleep(6000);
-        logInfo("CreateAccountTest executed");
+        logger.info("CreateAccountTest executed");
     }
 }
