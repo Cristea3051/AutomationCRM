@@ -5,7 +5,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
@@ -42,14 +41,22 @@ public class BasePage {
         logger.info("Driver initialized and configured for test");
     }
 
-    public void login(String username, String password) {
+    public void login(String usernameKey, String passwordKey) {
+        Properties credentials = loadCredentials();
+
+        String username = credentials.getProperty(usernameKey);
+        String password = credentials.getProperty(passwordKey);
+
+        if (username == null || password == null) {
+            throw new IllegalStateException("Username or password not found in credentials.properties");
+        }
+
         logger.info("Attempting to log in with username: {}", username);
         $("#login-username").setValue(username);
         $("#login-password").setValue(password);
         $("button.btn-alt-primary").click();
         logger.info("Login submitted");
     }
-
 
     public static void waitSleep(int timeoutInSeconds) {
         ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
@@ -100,9 +107,4 @@ public class BasePage {
             fillInputWithJS(inputField, value);
         }
     }
-
-    protected Properties getCredentials() {
-        return credentials;
-    }
-
 }

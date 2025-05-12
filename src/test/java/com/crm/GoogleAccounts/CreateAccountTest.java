@@ -11,8 +11,7 @@ public class CreateAccountTest extends BasePage {
     @Test
 
     public void createAccount() {
-
-        createAccount.performLogin();
+        login("global.admin.username", "global.admin.password");
         open("http://crm-dash/google-accounts-v2");
         createAccount.clickAddAccountButton();
         createAccount.fillAccountName("ONP_GG788_PRT_G225200");
