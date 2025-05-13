@@ -1,4 +1,4 @@
-target
-logs
-build
-.idea
+/target
+/logs
+/build
+/.idea
