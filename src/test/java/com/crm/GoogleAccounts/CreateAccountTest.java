@@ -12,9 +12,16 @@ public class CreateAccountTest extends BasePage {
 
     public void createAccount() {
         login("global.admin.username", "global.admin.password");
-        open("http://crm-dash/google-accounts-v2");
+        open("http://192.168.0.57/google-accounts-v2");
         createAccount.clickAddAccountButton();
         createAccount.fillAccountName("ONP_GG788_PRT_G225200");
+        createAccount.fillAccountLogin("TestLogin");
+        createAccount.fillAccountPassword("PasswordTest");
+        createAccount.fillEmailLogin("TestEmailLogin12344");
+        createAccount.fillEmailPassword("Password1234");
+        createAccount.fillAccountId("1334433");
+        createAccount.fillFarmerComments("comment1/comment2/comment3");
+        createAccount.selectStatus("Delivery");
         createAccount.clickCreateButton();
         logger.info("CreateAccountTest executed");
     }
