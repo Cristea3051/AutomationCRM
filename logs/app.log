@@ -1,0 +1,4 @@
+2025-05-08 16:49:43 INFO  com.crm.utils.BasePage - Driver initialized and configured for test
+2025-05-08 16:49:43 INFO  com.crm.utils.BasePage - Attempting to log in with username: victor.cristea@vebo.io
+2025-05-08 16:49:45 INFO  com.crm.utils.BasePage - Login submitted
+2025-05-08 16:49:50 INFO  com.crm.utils.BasePage - CreateAccountTest executed

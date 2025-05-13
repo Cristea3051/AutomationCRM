@@ -1,4 +1,4 @@
-package com.crm.googleaccounts;
+package com.crm.GoogleAccounts.DeleteAccount;
 
 import org.testng.annotations.Test;
 
