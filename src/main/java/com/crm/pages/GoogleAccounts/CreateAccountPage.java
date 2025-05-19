@@ -23,8 +23,10 @@ public class CreateAccountPage extends BasePage {
     protected final SelenideElement selectStatus = $x("//select[@data-modal-field-id='create_status']");
     protected final SelenideElement selectIdVerificationDate = $x("//input[@data-modal-field-id='create_id_verification']");
     protected final SelenideElement selectMbDeliveryDate = $x("//input[@data-modal-field-id='create_mb_delivery_date']");
+    protected final SelenideElement selectSyncFromDate = $x("//input[@data-modal-field-id='create_sync_from_date']");
     protected final SelenideElement twoFa = $x("//input[@data-modal-field-id='create_2fa']");
-    protected final  SelenideElement backupCode = $x("//input[@data-modal-field-id='create_backup_code']");
+    protected final SelenideElement backupCode = $x("//input[@data-modal-field-id='create_backup_code']");
+    protected final SelenideElement selectCreditCards= $x("//select[@data-modal-field-id='create_credit_cards']");
     protected final SelenideElement createButton = $x("//button[@id='create-google-accounts-button']");
 
 
@@ -109,7 +111,18 @@ public class CreateAccountPage extends BasePage {
         logger.info("MB Delivery date is {}", expectedValue);
     }
 
+    public void fillSyncFromDate(LocalDate date){
+        smartSelectSpecificDay(selectSyncFromDate, date);
+        String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        selectSyncFromDate.shouldHave(Condition.value(expectedValue));
+        logger.info("Sync From date is {}", expectedValue);
+    }
 
+    public void selectCreditCardsOption(int index) {
+        selectCreditCards.selectOption(index);
+        String selectedText = selectCreditCards.getSelectedOption().getText();
+        logger.info("Credit Card option selected at index {}: {}", index, selectedText);
+    }
 
     public void clickCreateButton(){
         smartClick(createButton);

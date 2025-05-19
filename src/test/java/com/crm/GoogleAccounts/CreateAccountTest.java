@@ -25,10 +25,13 @@ public class CreateAccountTest extends BasePage {
         createAccount.fillAccountId("1334433");
         createAccount.fillFarmerComments("comment1/comment2/comment3");
         createAccount.selectStatus("Delivery");
-        createAccount.fillTwoFa("we34asd34dfd45f4432");
-        createAccount.fillBackupCode("225200");
         createAccount.fillIdVerificationDate(LocalDate.parse("2025-05-19"));
+        createAccount.fillBackupCode("225200");
         createAccount.fillMbDeliveryDate(LocalDate.parse("2025-05-19"));
+        createAccount.fillTwoFa("we34asd34dfd45f4432");
+        createAccount.fillSyncFromDate(LocalDate.parse("2025-05-23"));
+        createAccount.selectCreditCardsOption(2);
+
 //        createAccount.clickCreateButton();
         logger.info("CreateAccountTest executed");
     }
