@@ -1,5 +1,6 @@
 package com.crm.GoogleAccounts;
 
+import com.codeborne.selenide.SelenideElement;
 import com.crm.pages.GoogleAccounts.CreateAccountPage;
 import com.crm.utils.BasePage;
 import org.testng.annotations.Test;
@@ -7,6 +8,7 @@ import org.testng.annotations.Test;
 import java.time.LocalDate;
 
 import static com.codeborne.selenide.Selenide.*;
+import static com.crm.pages.GoogleAccounts.CreateAccountPage.smartAutocompleteSelect;
 
 public class CreateAccountTest extends BasePage {
     private final CreateAccountPage createAccount = new CreateAccountPage();
@@ -31,7 +33,7 @@ public class CreateAccountTest extends BasePage {
         createAccount.fillTwoFa("we34asd34dfd45f4432");
         createAccount.fillSyncFromDate(LocalDate.parse("2025-05-23"));
         createAccount.selectCreditCardsOption(2);
-
+       createAccount.fillBatch("Super");
 //        createAccount.clickCreateButton();
         logger.info("CreateAccountTest executed");
     }

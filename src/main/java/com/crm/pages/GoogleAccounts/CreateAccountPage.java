@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.crm.utils.BasePage;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -24,6 +25,7 @@ public class CreateAccountPage extends BasePage {
     protected final SelenideElement selectIdVerificationDate = $x("//input[@data-modal-field-id='create_id_verification']");
     protected final SelenideElement selectMbDeliveryDate = $x("//input[@data-modal-field-id='create_mb_delivery_date']");
     protected final SelenideElement selectSyncFromDate = $x("//input[@data-modal-field-id='create_sync_from_date']");
+    public final SelenideElement selectBatch = $x ("//input[@data-modal-field-id='create_batch_id']");
     protected final SelenideElement twoFa = $x("//input[@data-modal-field-id='create_2fa']");
     protected final SelenideElement backupCode = $x("//input[@data-modal-field-id='create_backup_code']");
     protected final SelenideElement selectCreditCards= $x("//select[@data-modal-field-id='create_credit_cards']");
@@ -123,11 +125,19 @@ public class CreateAccountPage extends BasePage {
         String selectedText = selectCreditCards.getSelectedOption().getText();
         logger.info("Credit Card option selected at index {}: {}", index, selectedText);
     }
+    public void fillBatch(String keyword) {
+        smartAutocompleteSelect(selectBatch, keyword);
+
+        selectBatch.shouldHave(Condition.value(keyword));
+
+        logger.info("Batch field filled with value: {}", keyword);
+    }
 
     public void clickCreateButton(){
         smartClick(createButton);
         createButton.shouldBe(Condition.visible);
         logger.info("Create button clicked.");
     }
+
 
 }

@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -140,6 +141,28 @@ public static void smartSelectSpecificDay(SelenideElement dateInput, LocalDate d
     }
 }
 
+// Smart select with autocomplete
+public static void smartAutocompleteSelect(SelenideElement input, String textToType) {
+    try {
+        input.shouldBe(Condition.visible, Duration.ofSeconds(10))
+                .shouldBe(Condition.enabled);
 
+        input.click();
+        input.setValue(textToType);
 
+        SelenideElement autocompleteList = $("#autocomplete-list.autocomplete-items")
+                .shouldBe(Condition.visible, Duration.ofSeconds(10));
+
+        SelenideElement matchingOption = autocompleteList.$("div")
+                .shouldHave(Condition.text(textToType))
+                .shouldBe(Condition.enabled);
+
+        matchingOption.click();
+
+        logger.info("Selected autocomplete option '{}' for input {}", matchingOption.getText(), input);
+    } catch (Exception | AssertionError e) {
+        logger.warn("Failed to select autocomplete option for '{}'. Error: {}", input, e.getMessage());
+        throw e;
+    }
+}
 }
