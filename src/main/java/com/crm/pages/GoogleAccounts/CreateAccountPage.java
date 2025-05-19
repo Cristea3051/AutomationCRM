@@ -4,6 +4,9 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.crm.utils.BasePage;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import static com.codeborne.selenide.Selenide.*;
 
 public class CreateAccountPage extends BasePage {
@@ -12,12 +15,16 @@ public class CreateAccountPage extends BasePage {
     protected final SelenideElement addButton = $("button:has(svg.lucide-circle-plus-icon)");
     protected final SelenideElement accountName = $x("//textarea[@placeholder='Accounts Names List']");
     protected final SelenideElement accountLogin = $x("//input[@placeholder='Username' and @data-modal-field-id='create_username']");
-    protected final SelenideElement accountPassword = $x("//input[@placeholder='Password' and @data-modal-field-id='create_password']");
-    protected final SelenideElement emailLogin = $x("//input[@placeholder='Email Login' and @data-modal-field-id='create_email_login']");
-    protected final SelenideElement emailPassword = $x("//input[@placeholder='Email Password' and @data-modal-field-id='create_email_password']");
+    protected final SelenideElement accountPassword = $x("//input[@data-modal-field-id='create_password']");
+    protected final SelenideElement emailLogin = $x("//input[@data-modal-field-id='create_email_login']");
+    protected final SelenideElement emailPassword = $x("//input[@data-modal-field-id='create_email_password']");
     protected final SelenideElement accountId = $x ("//input[@placeholder='Account ID' and @data-modal-field-id='create_account_id']");
-    protected final SelenideElement farmerComments = $x("//input[@placeholder='Farmer Comments' and @data-modal-field-id='create_farmer_comments']");
-    protected final SelenideElement selectStatus = $x("//select[@name='status' and @data-modal-field-id='create_status']");
+    protected final SelenideElement farmerComments = $x("//input[@data-modal-field-id='create_farmer_comments']");
+    protected final SelenideElement selectStatus = $x("//select[@data-modal-field-id='create_status']");
+    protected final SelenideElement selectIdVerificationDate = $x("//input[@data-modal-field-id='create_id_verification']");
+    protected final SelenideElement selectMbDeliveryDate = $x("//input[@data-modal-field-id='create_mb_delivery_date']");
+    protected final SelenideElement twoFa = $x("//input[@data-modal-field-id='create_2fa']");
+    protected final  SelenideElement backupCode = $x("//input[@data-modal-field-id='create_backup_code']");
     protected final SelenideElement createButton = $x("//button[@id='create-google-accounts-button']");
 
 
@@ -67,7 +74,7 @@ public class CreateAccountPage extends BasePage {
     public void fillFarmerComments(String comments){
         smartFill(farmerComments, comments);
         farmerComments.shouldHave(Condition.value(comments));
-        logger.info("Farmer Comments filled.");
+        logger.info("Farmer Comments filled {}", comments );
     }
 
     public void selectStatus(String status) {
@@ -75,6 +82,34 @@ public class CreateAccountPage extends BasePage {
         selectStatus.shouldHave(Condition.value(status));
         logger.info("Status selected: {}", status);
     }
+
+    public void fillTwoFa(String twoFaValue){
+        smartFill(twoFa, twoFaValue);
+        twoFa.shouldHave(Condition.value(twoFaValue));
+        logger.info("2Fa value is  {}", twoFaValue);
+    }
+
+    public void fillBackupCode(String backupCodeValue){
+        smartFill(backupCode, backupCodeValue);
+        backupCode.shouldHave(Condition.value(backupCodeValue));
+        logger.info("Backup Code value is  {}", backupCodeValue);
+    }
+
+    public void fillIdVerificationDate(LocalDate date) {
+        smartSelectSpecificDay(selectIdVerificationDate, date);
+        String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        selectIdVerificationDate.shouldHave(Condition.value(expectedValue));
+        logger.info("Id verification date is {}", expectedValue);
+    }
+
+    public void fillMbDeliveryDate(LocalDate date) {
+        smartSelectSpecificDay(selectMbDeliveryDate, date);
+        String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        selectMbDeliveryDate.shouldHave(Condition.value(expectedValue));
+        logger.info("MB Delivery date is {}", expectedValue);
+    }
+
+
 
     public void clickCreateButton(){
         smartClick(createButton);
