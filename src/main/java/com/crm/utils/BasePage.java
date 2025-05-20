@@ -9,6 +9,9 @@ import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 import java.util.Properties;
 import java.util.concurrent.*;
 
@@ -107,4 +110,60 @@ public class BasePage {
             fillInputWithJS(inputField, value);
         }
     }
+
+//    Smart select date
+public static void smartSelectSpecificDay(SelenideElement dateInput, LocalDate date) {
+    try {
+        dateInput.shouldBe(Condition.exist)
+                .shouldBe(Condition.visible)
+                .shouldBe(Condition.enabled);
+        executeJavaScript("arguments[0].click();", dateInput);
+
+        SelenideElement calendar = $(".flatpickr-calendar.open")
+                .shouldBe(Condition.visible)
+                .shouldBe(Condition.exist);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd, yyyy", Locale.ENGLISH);
+        String formattedDate = date.format(formatter);
+
+        SelenideElement targetDay = calendar.$("span.flatpickr-day[aria-label='" + formattedDate + "']")
+                .shouldBe(Condition.visible)
+                .shouldBe(Condition.enabled);
+
+        targetDay.click();
+
+        logger.info("Selected date is '{}' for input field {}", formattedDate, dateInput);
+
+    } catch (Exception | AssertionError e) {
+        logger.warn("Error while selecting date '{}' for input field {}: {}", date, dateInput, e.getMessage());
+        throw e;
+    }
+}
+
+// Smart select with autocomplete
+public static void smartAutocompleteSelect(SelenideElement input, String textToType) {
+    try {
+        input.shouldBe(Condition.visible)
+                .shouldBe(Condition.enabled);
+
+        input.click();
+        input.setValue(textToType);
+
+        SelenideElement autocompleteList = $("#autocomplete-list.autocomplete-items")
+                .shouldBe(Condition.visible);
+
+
+        SelenideElement matchingOption = autocompleteList.$("div")
+                .shouldBe(Condition.enabled)
+                .shouldBe(Condition.enabled);
+
+        matchingOption.click();
+
+        logger.info("Selected autocomplete option: {}", input);
+    } catch (Exception | AssertionError e) {
+        logger.warn("Failed to select autocomplete option for '{}'. Error: {}", input, e.getMessage());
+        throw e;
+    }
+}
+
 }
