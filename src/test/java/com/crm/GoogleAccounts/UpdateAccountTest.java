@@ -1,4 +1,4 @@
-package com.crm.GoogleAccounts.UpdateAccount;
+package com.crm.GoogleAccounts;
 
 import org.testng.annotations.Test;
 
