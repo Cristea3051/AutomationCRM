@@ -39,7 +39,7 @@ public class BasePage {
     public void setUp() {
         Configuration.browser = "chrome";
         // Configuration.headless = false;
-        open("http://192.168.0.57/login");
+        open("http://192.168.0.126/login");
         Selenide.webdriver().driver().getWebDriver().manage().window().maximize();
         logger.info("Driver initialized and configured for test");
     }
