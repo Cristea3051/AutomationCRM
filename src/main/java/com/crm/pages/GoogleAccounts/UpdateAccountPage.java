@@ -29,20 +29,20 @@ public class UpdateAccountPage extends BasePage {
     protected final SelenideElement selectMbDeliveryDate = $x("//input[@data-modal-field-id='edit_mb_delivery_date']");
     protected final SelenideElement selectBHDate = $x("//input[@data-modal-field-id='edit_bh_date']");
     protected final SelenideElement selectSyncFromDate = $x("//input[@data-modal-field-id='edit_sync_from_date']");
-    protected final SelenideElement selectBatch = $x ("//input[@data-modal-field-id='create_batch_id']");
-    protected final SelenideElement selectAccountSource = $x ("//input[@data-modal-field-id='edit_source_id']");
+    protected final SelenideElement selectBatch = $x ("//input[@data-modal-field-id='edit_batch_name']");
+    protected final SelenideElement selectAccountSource = $x ("//input[@data-modal-field-id='edit_account_sources']");
     protected final SelenideElement twoFa = $x("//input[@data-modal-field-id='create_2fa']");
     protected final SelenideElement backupCode = $x("//input[@data-modal-field-id='edit_backup_code']");
     protected final SelenideElement selectCreditCards= $x("//select[@data-modal-field-id='edit_credit_cards']");
     protected final SelenideElement firstLastName = $x("//input[@data-modal-field-id='edit_first_last_name']");
-    protected final SelenideElement accountRDP = $x("//input[@data-modal-field-id='edit_rdp_id']");
+    protected final SelenideElement accountRDP = $x("//input[@data-modal-field-id='edit_rdp_name']");
     protected final SelenideElement selectAccountProxy = $x("//select[@data-modal-field-id='edit_proxies']");
     protected final SelenideElement geo = $x("//input[@data-modal-field-id='edit_geo']");
     protected final SelenideElement license = $x("//input[@data-modal-field-id='edit_license']");
     protected final SelenideElement mbComments = $x("//input[@data-modal-field-id='edit_mb_comments']");
     protected final SelenideElement applyButton = $x("//button[@id='edit-google-accounts-button']");
     protected final SelenideElement selectAccountDomain = $x("//select[@data-modal-field-id='edit_domains']");
-    protected final SelenideElement selectMediaBuyer = $x("//input[@data-modal-field-id='edit_account_owner']");
+    protected final SelenideElement selectMediaBuyer = $x("//input[@data-modal-field-id='edit_account_owner_name']");
 
 
     // Methods
@@ -136,6 +136,7 @@ public class UpdateAccountPage extends BasePage {
         String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         selectIdVerificationDate.shouldHave(Condition.value(expectedValue));
         logger.info("Id verification date is {}", expectedValue);
+        selectIdVerificationDate.click();
     }
 
     public void fillMbDeliveryDate(LocalDate date) {
@@ -143,6 +144,7 @@ public class UpdateAccountPage extends BasePage {
         String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         selectMbDeliveryDate.shouldHave(Condition.value(expectedValue));
         logger.info("MB Delivery date is {}", expectedValue);
+        selectIdVerificationDate.click();
     }
 
     public void fillSyncFromDate(LocalDate date){
@@ -150,6 +152,7 @@ public class UpdateAccountPage extends BasePage {
         String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         selectSyncFromDate.shouldHave(Condition.value(expectedValue));
         logger.info("Sync From date is {}", expectedValue);
+        selectIdVerificationDate.click();
     }
 
     public void selectCreditCardsOption(int index) {

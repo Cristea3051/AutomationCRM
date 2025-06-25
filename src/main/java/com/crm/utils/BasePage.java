@@ -5,12 +5,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import org.openqa.selenium.Keys;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.TextStyle;
 import java.util.Locale;
 import java.util.Properties;
 import java.util.concurrent.*;
@@ -117,28 +119,43 @@ public static void smartSelectSpecificDay(SelenideElement dateInput, LocalDate d
         dateInput.shouldBe(Condition.exist)
                 .shouldBe(Condition.visible)
                 .shouldBe(Condition.enabled);
+
+        // Deschide calendarul
         executeJavaScript("arguments[0].click();", dateInput);
 
+        // Calendarul deschis
         SelenideElement calendar = $(".flatpickr-calendar.open")
                 .shouldBe(Condition.visible)
                 .shouldBe(Condition.exist);
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd, yyyy", Locale.ENGLISH);
-        String formattedDate = date.format(formatter);
+        // Scrie anul manual
+        SelenideElement yearInput = calendar.$(".cur-year");
+        yearInput.shouldBe(Condition.visible);
+        yearInput.click();
+        yearInput.sendKeys(Keys.BACK_SPACE);
+        yearInput.sendKeys(String.valueOf(date.getYear()));
 
+        // Selectează luna
+        SelenideElement monthDropdown = calendar.$(".flatpickr-monthDropdown-months");
+        monthDropdown.shouldBe(Condition.visible)
+                .selectOption(date.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH));
+
+
+        // Selectează ziua
+        String formattedDate = date.format(DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.ENGLISH));
         SelenideElement targetDay = calendar.$("span.flatpickr-day[aria-label='" + formattedDate + "']")
                 .shouldBe(Condition.visible)
                 .shouldBe(Condition.enabled);
-
         targetDay.click();
 
-        logger.info("Selected date is '{}' for input field {}", formattedDate, dateInput);
+        logger.info("✅ Selected date '{}' for input field {}", formattedDate, dateInput);
 
     } catch (Exception | AssertionError e) {
-        logger.warn("Error while selecting date '{}' for input field {}: {}", date, dateInput, e.getMessage());
+        logger.warn("❌ Error while selecting date '{}' for input field {}: {}", date, dateInput, e.getMessage());
         throw e;
     }
 }
+
 
 // Smart select with autocomplete
 public static void smartAutocompleteSelect(SelenideElement input, String textToType) {
