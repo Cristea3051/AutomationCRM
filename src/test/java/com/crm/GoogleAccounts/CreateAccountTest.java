@@ -13,7 +13,7 @@ public class CreateAccountTest extends BasePage {
     @Test
     public void createAccount() {
         login("global.admin.username", "global.admin.password");
-        open("http://192.168.0.57/google-accounts-v2");
+        open("http://192.168.0.126/google-accounts-v2");
         createAccount.clickAddAccountButton();
         createAccount.fillAccountName("ONP_GG788_ PRT_G225200");
         createAccount.fillAccountLogin("TestLogin");
