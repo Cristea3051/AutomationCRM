@@ -53,6 +53,7 @@ public class UpdateAccountPage extends BasePage {
     }
 
     public void clickSearchedAccount(){
+        accountCheckbox.shouldBe(Condition.visible);
         smartClick(accountCheckbox);
         accountCheckbox.shouldBe(Condition.visible);
         logger.info("Account is selected with checbox");
@@ -126,9 +127,10 @@ public class UpdateAccountPage extends BasePage {
 
     public void fillBHDate(LocalDate date){
         smartSelectSpecificDay(selectBHDate, date);
-        String expectedValue = date.format(DateTimeFormatter.ofPattern("YYYY-MM-dd"));
+        String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         selectIdVerificationDate.shouldHave(Condition.value(expectedValue));
         logger.info("BH Date date is {}", expectedValue);
+        selectBHDate.click();
     }
 
     public void fillIdVerificationDate(LocalDate date) {
@@ -140,19 +142,20 @@ public class UpdateAccountPage extends BasePage {
     }
 
     public void fillMbDeliveryDate(LocalDate date) {
+        selectMbDeliveryDate.click();
         smartSelectSpecificDay(selectMbDeliveryDate, date);
         String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         selectMbDeliveryDate.shouldHave(Condition.value(expectedValue));
         logger.info("MB Delivery date is {}", expectedValue);
-        selectIdVerificationDate.click();
     }
 
     public void fillSyncFromDate(LocalDate date){
+        selectSyncFromDate.click();
         smartSelectSpecificDay(selectSyncFromDate, date);
         String expectedValue = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         selectSyncFromDate.shouldHave(Condition.value(expectedValue));
         logger.info("Sync From date is {}", expectedValue);
-        selectIdVerificationDate.click();
+
     }
 
     public void selectCreditCardsOption(int index) {

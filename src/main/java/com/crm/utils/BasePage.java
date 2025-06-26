@@ -120,33 +120,29 @@ public static void smartSelectSpecificDay(SelenideElement dateInput, LocalDate d
                 .shouldBe(Condition.visible)
                 .shouldBe(Condition.enabled);
 
-        // Deschide calendarul
         executeJavaScript("arguments[0].click();", dateInput);
 
-        // Calendarul deschis
         SelenideElement calendar = $(".flatpickr-calendar.open")
                 .shouldBe(Condition.visible)
                 .shouldBe(Condition.exist);
 
-        // Scrie anul manual
         SelenideElement yearInput = calendar.$(".cur-year");
         yearInput.shouldBe(Condition.visible);
         yearInput.click();
         yearInput.sendKeys(Keys.BACK_SPACE);
         yearInput.sendKeys(String.valueOf(date.getYear()));
 
-        // Selectează luna
         SelenideElement monthDropdown = calendar.$(".flatpickr-monthDropdown-months");
         monthDropdown.shouldBe(Condition.visible)
                 .selectOption(date.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH));
 
 
-        // Selectează ziua
         String formattedDate = date.format(DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.ENGLISH));
         SelenideElement targetDay = calendar.$("span.flatpickr-day[aria-label='" + formattedDate + "']")
                 .shouldBe(Condition.visible)
                 .shouldBe(Condition.enabled);
         targetDay.click();
+
 
         logger.info("✅ Selected date '{}' for input field {}", formattedDate, dateInput);
 

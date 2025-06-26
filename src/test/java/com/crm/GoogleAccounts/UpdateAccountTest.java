@@ -21,6 +21,7 @@ public class UpdateAccountTest extends BasePage {
         updateAccount.fillAccountLogin("TestLogin");
         updateAccount.fillAccountPassword("PasswordTest");
         updateAccount.fillEmailLogin("TestEmailLogin12344");
+        updateAccount.fillSyncFromDate(LocalDate.parse("2025-05-23"));
         updateAccount.fillEmailPassword("Password1234");
         updateAccount.fillAccountId("1334433");
         updateAccount.fillIdVerificationDate(LocalDate.parse("2025-05-25"));
@@ -30,7 +31,6 @@ public class UpdateAccountTest extends BasePage {
         updateAccount.fillBackupCode("225200");
         updateAccount.fillMbDeliveryDate(LocalDate.parse("2025-05-25"));
         updateAccount.fillTwoFa("we34asd34dfd45f4432");
-        updateAccount.fillSyncFromDate(LocalDate.parse("2025-05-23"));
         updateAccount.selectCreditCardsOption(2);
         updateAccount.fillBatchAndSource("Super");
         updateAccount.fillFirstLastName("FirstLastNameAuto");
